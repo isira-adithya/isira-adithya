@@ -4,7 +4,7 @@
 - 💞️ I’m looking to collaborate on bug bounty and security research
 - 📫 How to reach me 
   - [Twitter](https://twitter.com/isira_adithya)
-  - [LinkedIn](https://www.linkedin.com/in/isira-adithya-975472215/)
+  - [LinkedIn](https://www.linkedin.com/in/isiraadithya/)
   - [Instagram](https://www.instagram.com/isira_adithya/)
   - [Website](https://isiraadithya.com/)
   - [Blog](https://blog.isiraadithya.com/)
