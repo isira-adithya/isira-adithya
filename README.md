@@ -1,7 +1,7 @@
 - 👋 Hi, I’m @isira-adithya
 - 👀 I’m interested in ethical hacking and developing stuff.
 - 🌱 I’m currently following a cybersecurity degree.
-- 💞️ I’m looking to collaborate on bug bounty and security research
+- 🤝 I’m looking to collaborate on bug bounty and security research
 - 📫 How to reach me 
   - [Twitter](https://twitter.com/isira_adithya)
   - [LinkedIn](https://www.linkedin.com/in/isiraadithya/)
