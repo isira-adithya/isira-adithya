@@ -1,0 +1,122 @@
+name: Generate profile assets
+
+on:
+  schedule:
+    # 02:47 in Sri Lanka (UTC+05:30). The uncommon minute reduces scheduler congestion.
+    - cron: "17 21 * * *"
+  workflow_dispatch:
+  push:
+    paths:
+      - ".github/workflows/profile-assets.yml"
+
+permissions:
+  contents: write
+
+concurrency:
+  group: profile-assets
+  cancel-in-progress: true
+
+jobs:
+  generate:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Check out profile repository
+        uses: actions/checkout@v6
+        with:
+          fetch-depth: 0
+
+      - name: Prepare output directories
+        run: mkdir -p assets profile profile-3d-contrib
+
+      - name: Generate GitHub stats card
+        uses: stats-organization/github-readme-stats-action@v2.0.1
+        with:
+          card: stats
+          options: >-
+            username=${{ github.repository_owner }}&show_icons=true&include_all_commits=true&rank_icon=percentile&hide_border=true&theme=transparent&title_color=22d3ee&text_color=94a3b8&icon_color=2dd4bf
+          path: profile/stats.svg
+          token: ${{ secrets.PROFILE_STATS_TOKEN || secrets.GITHUB_TOKEN }}
+
+      - name: Generate language card
+        uses: stats-organization/github-readme-stats-action@v2.0.1
+        with:
+          card: top-langs
+          options: >-
+            username=${{ github.repository_owner }}&layout=compact&langs_count=8&hide_border=true&theme=transparent&title_color=22d3ee&text_color=94a3b8
+          path: profile/top-langs.svg
+          token: ${{ secrets.PROFILE_STATS_TOKEN || secrets.GITHUB_TOKEN }}
+
+      - name: Generate XSSpecter repository card
+        uses: stats-organization/github-readme-stats-action@v2.0.1
+        with:
+          card: pin
+          options: >-
+            username=${{ github.repository_owner }}&repo=xsspecter&hide_border=true&theme=transparent&title_color=22d3ee&text_color=94a3b8&icon_color=2dd4bf
+          path: profile/pin-xsspecter.svg
+          token: ${{ secrets.PROFILE_STATS_TOKEN || secrets.GITHUB_TOKEN }}
+
+      - name: Generate Burp Collaborator to Discord repository card
+        uses: stats-organization/github-readme-stats-action@v2.0.1
+        with:
+          card: pin
+          options: >-
+            username=${{ github.repository_owner }}&repo=bcollabtodiscord&hide_border=true&theme=transparent&title_color=22d3ee&text_color=94a3b8&icon_color=2dd4bf
+          path: profile/pin-bcollabtodiscord.svg
+          token: ${{ secrets.PROFILE_STATS_TOKEN || secrets.GITHUB_TOKEN }}
+
+      - name: Generate filter-waf repository card
+        uses: stats-organization/github-readme-stats-action@v2.0.1
+        with:
+          card: pin
+          options: >-
+            username=${{ github.repository_owner }}&repo=filter-waf&hide_border=true&theme=transparent&title_color=22d3ee&text_color=94a3b8&icon_color=2dd4bf
+          path: profile/pin-filter-waf.svg
+          token: ${{ secrets.PROFILE_STATS_TOKEN || secrets.GITHUB_TOKEN }}
+
+      - name: Generate getallips repository card
+        uses: stats-organization/github-readme-stats-action@v2.0.1
+        with:
+          card: pin
+          options: >-
+            username=${{ github.repository_owner }}&repo=getallips&hide_border=true&theme=transparent&title_color=22d3ee&text_color=94a3b8&icon_color=2dd4bf
+          path: profile/pin-getallips.svg
+          token: ${{ secrets.PROFILE_STATS_TOKEN || secrets.GITHUB_TOKEN }}
+
+      - name: Generate contribution streak card
+        uses: DenverCoder1/github-readme-streak-stats@v1.7.0
+        with:
+          options: >-
+            user=${{ github.repository_owner }}&hide_border=true&background=00000000&ring=22d3ee&fire=2dd4bf&currStreakLabel=22d3ee&sideLabels=94a3b8&currStreakNum=e2e8f0&sideNums=e2e8f0&dates=64748b&stroke=00000000
+          path: profile/streak.svg
+          token: ${{ secrets.PROFILE_STATS_TOKEN || secrets.GITHUB_TOKEN }}
+
+      - name: Generate light and dark contribution snakes
+        uses: Platane/snk/svg-only@v3.5.0
+        with:
+          github_user_name: ${{ github.repository_owner }}
+          outputs: |
+            assets/github-snake.svg
+            assets/github-snake-dark.svg?palette=github-dark
+
+      - name: Generate 3D contribution calendar
+        uses: yoshi389111/github-profile-3d-contrib@v0.9.3
+        env:
+          GITHUB_TOKEN: ${{ secrets.PROFILE_STATS_TOKEN || secrets.GITHUB_TOKEN }}
+          USERNAME: ${{ github.repository_owner }}
+
+      - name: Commit refreshed assets
+        shell: bash
+        run: |
+          set -euo pipefail
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add assets/github-snake*.svg profile/*.svg profile-3d-contrib/*.svg
+
+          if git diff --cached --quiet; then
+            echo "No generated asset changes."
+            exit 0
+          fi
+
+          git commit -m "chore: refresh profile visuals"
+          git push

@@ -1,0 +1,6 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="85" viewBox="0 0 1200 85" role="img" aria-labelledby="title">
+<title id="title">Curiosity is the root of security</title>
+<defs><linearGradient id="g" x1="0" y1="0" x2="1" y2="0"><stop stop-color="#22d3ee" stop-opacity="0"/><stop offset=".5" stop-color="#22d3ee"/><stop offset="1" stop-color="#2dd4bf" stop-opacity="0"/></linearGradient><style>.m{font-family:ui-monospace,SFMono-Regular,Menlo,Monaco,Consolas,"Liberation Mono",monospace}</style></defs>
+<path d="M0 42C180 10 360 75 600 42S1020 10 1200 42" fill="none" stroke="url(#g)" stroke-width="2"/>
+<text x="600" y="69" class="m" fill="#64748b" font-size="12" letter-spacing="1.6" text-anchor="middle">CURIOSITY IS THE ROOT OF SECURITY</text>
+</svg>
