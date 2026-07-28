@@ -30,7 +30,7 @@ jobs:
         run: mkdir -p assets profile profile-3d-contrib
 
       - name: Generate GitHub stats card
-        uses: stats-organization/github-readme-stats-action@v2.0.1
+        uses: stats-organization/github-readme-stats-action@v2.0.2
         with:
           card: stats
           options: >-
@@ -39,7 +39,7 @@ jobs:
           token: ${{ secrets.PROFILE_STATS_TOKEN || secrets.GITHUB_TOKEN }}
 
       - name: Generate language card
-        uses: stats-organization/github-readme-stats-action@v2.0.1
+        uses: stats-organization/github-readme-stats-action@v2.0.2
         with:
           card: top-langs
           options: >-
@@ -48,7 +48,7 @@ jobs:
           token: ${{ secrets.PROFILE_STATS_TOKEN || secrets.GITHUB_TOKEN }}
 
       - name: Generate XSSpecter repository card
-        uses: stats-organization/github-readme-stats-action@v2.0.1
+        uses: stats-organization/github-readme-stats-action@v2.0.2
         with:
           card: pin
           options: >-
@@ -57,7 +57,7 @@ jobs:
           token: ${{ secrets.PROFILE_STATS_TOKEN || secrets.GITHUB_TOKEN }}
 
       - name: Generate Burp Collaborator to Discord repository card
-        uses: stats-organization/github-readme-stats-action@v2.0.1
+        uses: stats-organization/github-readme-stats-action@v2.0.2
         with:
           card: pin
           options: >-
@@ -66,7 +66,7 @@ jobs:
           token: ${{ secrets.PROFILE_STATS_TOKEN || secrets.GITHUB_TOKEN }}
 
       - name: Generate filter-waf repository card
-        uses: stats-organization/github-readme-stats-action@v2.0.1
+        uses: stats-organization/github-readme-stats-action@v2.0.2
         with:
           card: pin
           options: >-
@@ -75,7 +75,7 @@ jobs:
           token: ${{ secrets.PROFILE_STATS_TOKEN || secrets.GITHUB_TOKEN }}
 
       - name: Generate getallips repository card
-        uses: stats-organization/github-readme-stats-action@v2.0.1
+        uses: stats-organization/github-readme-stats-action@v2.0.2
         with:
           card: pin
           options: >-
