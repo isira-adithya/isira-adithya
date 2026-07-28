@@ -72,8 +72,6 @@ Security research is often private by design. Client names, unreleased findings,
   <img src="https://img.shields.io/badge/DigitalOcean-0D1117?style=flat-square&amp;logo=digitalocean&amp;logoColor=0080FF" alt="DigitalOcean" />
 </p>
 
-**Daily environment:** Windows 11 + WSL2, Ubuntu VPS infrastructure, Burp Suite Professional, Python 3, Go, Node.js, Docker, PostgreSQL, Redis, and ProjectDiscovery tooling.
-
 ## `publications.and_talks`
 
 - **2026 · IEEE / SCSE:** [XSSpecter: An Automated Framework for End-to-End Blind XSS Detection and Reporting](https://doi.org/10.1109/SCSE70081.2026.11499908)
