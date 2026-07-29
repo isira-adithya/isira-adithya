@@ -9,25 +9,26 @@
   </a>
 </div>
 
-<div align="center">
-  <a href="https://github.com/DenverCoder1/readme-typing-svg">
-    <img src="https://readme-typing-svg.demolab.com?font=JetBrains+Mono&amp;weight=500&amp;size=18&amp;pause=1100&amp;color=22D3EE&amp;center=true&amp;vCenter=true&amp;repeat=true&amp;width=780&amp;height=45&amp;lines=Cyber+Security+Researcher;Ethical+Hacker+%26+Bug+Bounty+Hunter;Web+%7C+API+%7C+Cloud+Security;Building+offensive+security+tooling" alt="Cyber Security Researcher, Ethical Hacker, Bug Bounty Hunter" />
-  </a>
-</div>
+<p align="center">
+  <img width="100%" src="./assets/tagline.svg" alt="Cyber Security Researcher, Ethical Hacker and Bug Bounty Hunter, Web / API / Cloud Security, building offensive security tooling" />
+</p>
+
+<table align="center">
+  <tr>
+    <td><a href="https://isiraadithya.com/"><img src="./assets/badge-website.svg" alt="Website: isiraadithya.com" /></a></td>
+    <td><a href="https://app.intigriti.com/profile/isira_adithya"><img src="./assets/badge-intigriti.svg" alt="Intigriti: rank number 12 all-time" /></a></td>
+    <td><a href="https://hackerone.com/isira_adithya"><img src="./assets/badge-hackerone.svg" alt="HackerOne: 41 thanks" /></a></td>
+    <td><a href="https://www.linkedin.com/in/isiraadithya/"><img src="./assets/badge-linkedin.svg" alt="LinkedIn: connect" /></a></td>
+    <td><a href="https://x.com/isira_adithya"><img src="./assets/badge-x.svg" alt="X: @isira_adithya" /></a></td>
+  </tr>
+</table>
 
 <p align="center">
-  <a href="https://isiraadithya.com/"><img src="https://img.shields.io/badge/website-isiraadithya.com-07111f?style=for-the-badge&amp;logo=firefoxbrowser&amp;logoColor=22d3ee" alt="Website" /></a>
-  <a href="https://app.intigriti.com/profile/isira_adithya"><img src="https://img.shields.io/badge/Intigriti-%2312%20all--time-07111f?style=for-the-badge&amp;logoColor=2dd4bf" alt="Intigriti profile" /></a>
-  <a href="https://hackerone.com/isira_adithya"><img src="https://img.shields.io/badge/HackerOne-41%20thanks-07111f?style=for-the-badge&amp;logo=hackerone&amp;logoColor=ffffff" alt="HackerOne profile" /></a>
-  <a href="https://www.linkedin.com/in/isiraadithya/"><img src="https://img.shields.io/badge/LinkedIn-connect-07111f?style=for-the-badge&amp;logo=linkedin&amp;logoColor=0a66c2" alt="LinkedIn" /></a>
-  <a href="https://x.com/isira_adithya"><img src="https://img.shields.io/badge/X-@isira__adithya-07111f?style=for-the-badge&amp;logo=x&amp;logoColor=ffffff" alt="X profile" /></a>
+  <img width="100%" src="./assets/meta.svg" alt="Based in Sri Lanka, focused on web, API and cloud security, independent researcher" />
 </p>
 
 <p align="center">
   <img src="https://komarev.com/ghpvc/?username=isira-adithya&amp;label=profile%20views&amp;color=0e7490&amp;style=flat-square" alt="Profile views" />
-  <img src="https://img.shields.io/badge/base-Sri%20Lanka-0f766e?style=flat-square" alt="Based in Sri Lanka" />
-  <img src="https://img.shields.io/badge/focus-Web%20%7C%20API%20%7C%20Cloud-0369a1?style=flat-square" alt="Focus: Web, API, and Cloud security" />
-  <img src="https://img.shields.io/badge/status-independent%20researcher-334155?style=flat-square" alt="Independent security researcher" />
 </p>
 
 ## `$ whoami`
@@ -35,12 +36,13 @@
 ```console
 isira@research:~$ cat profile.json
 {
-  "role":       "Cyber Security Researcher / Ethical Hacker",
-  "specialty":  ["Web Security", "API Security", "Offensive Security"],
-  "method":     "discover → map → test → validate → report → retest",
-  "education":  "BSc (Hons) Computer Security · First Class Honours",
-  "base":       "Sri Lanka",
-  "principle":  "Break assumptions. Document impact. Help teams fix it."
+  "role":      "Cyber Security Researcher",
+  "specialty": ["Web", "API", "Offensive Security"],
+  "method":    "map -> test -> validate -> report",
+  "education": "BSc (Hons) Computer Security",
+  "honours":   "First Class · top of batch",
+  "base":      "Sri Lanka",
+  "principle": "Break assumptions. Document impact."
 }
 ```
 
@@ -60,16 +62,66 @@ Security research is often private by design. Client names, unreleased findings,
 ## `stack.current`
 
 <p align="center">
-  <img src="https://skillicons.dev/icons?i=python,go,js,ts,nodejs,docker,postgres,redis,linux,git,githubactions,vscode&amp;perline=12" alt="Python, Go, JavaScript, TypeScript, Node.js, Docker, PostgreSQL, Redis, Linux, Git, GitHub Actions, and Visual Studio Code" />
+  <img width="100%" src="./assets/stack.svg" alt="Python, Go, JavaScript, TypeScript, Node.js, Docker, PostgreSQL, Redis, Linux, Burp Suite, ProjectDiscovery, Playwright, WSL2, Cloudflare, DigitalOcean, Git, and GitHub Actions" />
 </p>
 
+## `featured.work`
+
+<table align="center">
+  <tr>
+    <td>
+      <a href="https://github.com/isira-adithya/xsspecter"><picture>
+        <source media="(prefers-color-scheme: dark)" srcset="./profile/pin-xsspecter-dark.svg" />
+        <img width="100%" src="./profile/pin-xsspecter-light.svg" alt="XSSpecter repository" />
+      </picture></a>
+    </td>
+    <td>
+      <a href="https://github.com/isira-adithya/bcollabtodiscord"><picture>
+        <source media="(prefers-color-scheme: dark)" srcset="./profile/pin-bcollabtodiscord-dark.svg" />
+        <img width="100%" src="./profile/pin-bcollabtodiscord-light.svg" alt="Burp Collaborator to Discord repository" />
+      </picture></a>
+    </td>
+  </tr>
+  <tr>
+    <td>
+      <a href="https://github.com/isira-adithya/filter-waf"><picture>
+        <source media="(prefers-color-scheme: dark)" srcset="./profile/pin-filter-waf-dark.svg" />
+        <img width="100%" src="./profile/pin-filter-waf-light.svg" alt="filter-waf repository" />
+      </picture></a>
+    </td>
+    <td>
+      <a href="https://github.com/isira-adithya/getallips"><picture>
+        <source media="(prefers-color-scheme: dark)" srcset="./profile/pin-getallips-dark.svg" />
+        <img width="100%" src="./profile/pin-getallips-light.svg" alt="getallips repository" />
+      </picture></a>
+    </td>
+  </tr>
+</table>
+
+## `activity`
+
+<table align="center">
+  <tr>
+    <td>
+      <picture>
+        <source media="(prefers-color-scheme: dark)" srcset="./profile/stats-dark.svg" />
+        <img width="100%" src="./profile/stats-light.svg" alt="GitHub statistics" />
+      </picture>
+    </td>
+    <td>
+      <picture>
+        <source media="(prefers-color-scheme: dark)" srcset="./profile/streak-dark.svg" />
+        <img width="100%" src="./profile/streak-light.svg" alt="Contribution streak" />
+      </picture>
+    </td>
+  </tr>
+</table>
+
 <p align="center">
-  <img src="https://img.shields.io/badge/Burp%20Suite-FF6633?style=flat-square&amp;logo=burpsuite&amp;logoColor=white" alt="Burp Suite" />
-  <img src="https://img.shields.io/badge/WSL2-0D1117?style=flat-square&amp;logo=windows&amp;logoColor=00A4EF" alt="WSL2" />
-  <img src="https://img.shields.io/badge/ProjectDiscovery-0D1117?style=flat-square&amp;logo=protonvpn&amp;logoColor=22d3ee" alt="ProjectDiscovery tools" />
-  <img src="https://img.shields.io/badge/Playwright-0D1117?style=flat-square&amp;logo=playwright&amp;logoColor=2dd4bf" alt="Playwright" />
-  <img src="https://img.shields.io/badge/Cloudflare-0D1117?style=flat-square&amp;logo=cloudflare&amp;logoColor=F48120" alt="Cloudflare" />
-  <img src="https://img.shields.io/badge/DigitalOcean-0D1117?style=flat-square&amp;logo=digitalocean&amp;logoColor=0080FF" alt="DigitalOcean" />
+  <picture>
+    <source media="(prefers-color-scheme: dark)" srcset="./assets/github-snake-dark.svg" />
+    <img width="100%" src="./assets/github-snake.svg" alt="Contribution graph consumed by a snake" />
+  </picture>
 </p>
 
 ## `publications.and_talks`

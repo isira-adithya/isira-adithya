@@ -1,80 +1,98 @@
 <svg xmlns="http://www.w3.org/2000/svg" width="1200" height="320" viewBox="0 0 1200 320" role="img" aria-labelledby="title desc">
   <title id="title">Isira Adithya, Cyber Security Researcher</title>
-  <desc id="desc">Dark terminal-inspired banner with cyan and teal security research graphics.</desc>
+  <desc id="desc">Terminal-inspired banner with cyan and teal security research graphics.</desc>
   <defs>
+    <style>
+      svg{
+        --bg-a:#eef4fa; --bg-b:#e6eef6; --bg-c:#dfeaf3;
+        --panel:#ffffff; --chip:#f2f7fb;
+        --border:#c6d5e2; --border-2:#d9e4ee;
+        --a1:#0e7490; --a2:#0f766e;
+        --fg:#0f172a; --fg-2:#334155; --muted:#55657a; --faint:#8c9bab;
+        --grid:#c9d8e6;
+      }
+      @media (prefers-color-scheme: dark){
+        svg{
+          --bg-a:#05080f; --bg-b:#07111f; --bg-c:#0b1624;
+          --panel:#050a12; --chip:#081522;
+          --border:#1d3b52; --border-2:#17384d;
+          --a1:#22d3ee; --a2:#2dd4bf;
+          --fg:#f8fafc; --fg-2:#cbd5e1; --muted:#94a3b8; --faint:#64748b;
+          --grid:#17334a;
+        }
+      }
+      .m { font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", monospace; }
+      .cursor { animation: blink 1.05s steps(1,end) infinite; }
+      .scan { animation: scan 8s linear infinite; }
+      .pulse { animation: pulse 2.8s ease-in-out infinite; transform-origin: 898px 159px; }
+      @keyframes blink { 0%,48% { opacity: 1 } 49%,100% { opacity: 0 } }
+      @keyframes scan { from { transform: translateY(-60px) } to { transform: translateY(380px) } }
+      @keyframes pulse { 0%,100% { opacity: .55; transform: scale(.96) } 50% { opacity: 1; transform: scale(1.04) } }
+    </style>
     <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
-      <stop offset="0" stop-color="#05080f"/>
-      <stop offset="0.48" stop-color="#07111f"/>
-      <stop offset="1" stop-color="#0b1624"/>
+      <stop offset="0" stop-color="var(--bg-a)"/>
+      <stop offset="0.48" stop-color="var(--bg-b)"/>
+      <stop offset="1" stop-color="var(--bg-c)"/>
     </linearGradient>
     <linearGradient id="accent" x1="0" y1="0" x2="1" y2="0">
-      <stop offset="0" stop-color="#22d3ee"/>
-      <stop offset="1" stop-color="#2dd4bf"/>
+      <stop offset="0" stop-color="var(--a1)"/>
+      <stop offset="1" stop-color="var(--a2)"/>
     </linearGradient>
     <radialGradient id="glow" cx="50%" cy="50%" r="50%">
-      <stop offset="0" stop-color="#22d3ee" stop-opacity="0.24"/>
-      <stop offset="1" stop-color="#22d3ee" stop-opacity="0"/>
+      <stop offset="0" stop-color="var(--a1)" stop-opacity="0.20"/>
+      <stop offset="1" stop-color="var(--a1)" stop-opacity="0"/>
     </radialGradient>
     <pattern id="grid" width="36" height="36" patternUnits="userSpaceOnUse">
-      <path d="M36 0H0V36" fill="none" stroke="#17334a" stroke-opacity="0.30" stroke-width="1"/>
+      <path d="M36 0H0V36" fill="none" stroke="var(--grid)" stroke-opacity="0.45" stroke-width="1"/>
     </pattern>
     <filter id="softGlow" x="-60%" y="-60%" width="220%" height="220%">
       <feGaussianBlur stdDeviation="5" result="blur"/>
       <feMerge><feMergeNode in="blur"/><feMergeNode in="SourceGraphic"/></feMerge>
     </filter>
     <clipPath id="frame"><rect width="1200" height="320" rx="18"/></clipPath>
-    <style>
-      .mono { font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", monospace; }
-      .cursor { animation: blink 1.05s steps(1,end) infinite; }
-      .scan { animation: scan 8s linear infinite; }
-      .pulse { animation: pulse 2.8s ease-in-out infinite; transform-origin: 978px 158px; }
-      @keyframes blink { 0%,48% { opacity: 1 } 49%,100% { opacity: 0 } }
-      @keyframes scan { from { transform: translateY(-60px) } to { transform: translateY(380px) } }
-      @keyframes pulse { 0%,100% { opacity: .55; transform: scale(.96) } 50% { opacity: 1; transform: scale(1.04) } }
-    </style>
   </defs>
 
   <g clip-path="url(#frame)">
     <rect width="1200" height="320" fill="url(#bg)"/>
     <rect width="1200" height="320" fill="url(#grid)"/>
     <ellipse cx="1010" cy="120" rx="300" ry="235" fill="url(#glow)"/>
-    <path d="M0 287 C210 237, 430 350, 650 285 S1010 215, 1200 270 V320 H0 Z" fill="#0e7490" opacity="0.08"/>
+    <path d="M0 287 C210 237, 430 350, 650 285 S1010 215, 1200 270 V320 H0 Z" fill="var(--a1)" opacity="0.08"/>
     <rect class="scan" x="0" y="0" width="1200" height="52" fill="url(#accent)" opacity="0.025"/>
 
-    <rect x="30" y="25" width="1140" height="270" rx="14" fill="#050a12" fill-opacity="0.76" stroke="#1d3b52"/>
-    <path d="M30 66H1170" stroke="#1d3b52"/>
+    <rect x="30" y="25" width="1140" height="270" rx="14" fill="var(--panel)" fill-opacity="0.76" stroke="var(--border)"/>
+    <path d="M30 66H1170" stroke="var(--border)"/>
     <circle cx="54" cy="45" r="6" fill="#fb7185"/>
     <circle cx="76" cy="45" r="6" fill="#fbbf24"/>
     <circle cx="98" cy="45" r="6" fill="#34d399"/>
-    <text x="120" y="50" class="mono" fill="#64748b" font-size="13">/home/isira/research/profile.sh</text>
-    <text x="1128" y="50" class="mono" fill="#334155" font-size="12" text-anchor="end">TLS 1.3 · AUTHORIZED</text>
+    <text x="120" y="50" class="m" fill="var(--muted)" font-size="13">/home/isira/research/profile.sh</text>
+    <text x="1128" y="50" class="m" fill="var(--faint)" font-size="12" text-anchor="end">TLS 1.3 · AUTHORIZED</text>
 
-    <text x="64" y="113" class="mono" fill="#22d3ee" font-size="13" letter-spacing="3">CYBER SECURITY RESEARCHER</text>
-    <text x="61" y="163" class="mono" fill="#f8fafc" font-size="45" font-weight="700" letter-spacing="1.5">ISIRA ADITHYA</text>
+    <text x="64" y="113" class="m" fill="var(--a1)" font-size="13" letter-spacing="3">CYBER SECURITY RESEARCHER</text>
+    <text x="61" y="163" class="m" fill="var(--fg)" font-size="45" font-weight="700" letter-spacing="1.5">ISIRA ADITHYA</text>
     <rect x="63" y="179" width="492" height="3" rx="1.5" fill="url(#accent)"/>
 
-    <text x="64" y="216" class="mono" fill="#64748b" font-size="14">isira@research:~$</text>
-    <text x="222" y="216" class="mono" fill="#cbd5e1" font-size="14">map --surface web,api,cloud --mode responsible</text>
-    <rect class="cursor" x="637" y="203" width="9" height="17" fill="#2dd4bf"/>
-    <text x="64" y="244" class="mono" fill="#2dd4bf" font-size="13">[+] tracing trust boundaries, identity, and state</text>
-    <text x="64" y="268" class="mono" fill="#94a3b8" font-size="13">[+] validate impact -> report clearly -> retest the fix</text>
+    <text x="64" y="216" class="m" fill="var(--muted)" font-size="14">isira@research:~$</text>
+    <text x="222" y="216" class="m" fill="var(--fg-2)" font-size="14">map --surface web,api,cloud --mode responsible</text>
+    <rect class="cursor" x="637" y="203" width="9" height="17" fill="var(--a2)"/>
+    <text x="64" y="244" class="m" fill="var(--a2)" font-size="13">[+] tracing trust boundaries, identity, and state</text>
+    <text x="64" y="268" class="m" fill="var(--muted)" font-size="13">[+] validate impact -&gt; report clearly -&gt; retest the fix</text>
 
     <g opacity="0.88">
-      <path d="M814 100L898 62L982 100V170C982 223 946 255 898 276C850 255 814 223 814 170Z" fill="#081522" stroke="url(#accent)" stroke-width="2"/>
-      <path d="M898 84L958 111V167C958 205 935 230 898 249C861 230 838 205 838 167V111Z" fill="none" stroke="#1d4f67" stroke-width="1.5"/>
-      <circle class="pulse" cx="898" cy="159" r="42" fill="none" stroke="#22d3ee" stroke-opacity="0.34"/>
-      <circle cx="898" cy="159" r="29" fill="#07111f" stroke="#2dd4bf"/>
-      <text x="898" y="167" class="mono" fill="#e2e8f0" font-size="23" font-weight="700" text-anchor="middle">IA</text>
-      <path d="M982 117L1068 88M982 158H1110M974 205L1064 240" stroke="#1d4f67"/>
-      <circle cx="1068" cy="88" r="5" fill="#22d3ee" filter="url(#softGlow)"/>
-      <circle cx="1110" cy="158" r="5" fill="#2dd4bf" filter="url(#softGlow)"/>
-      <circle cx="1064" cy="240" r="5" fill="#22d3ee" filter="url(#softGlow)"/>
-      <text x="1001" y="109" class="mono" fill="#64748b" font-size="11">WEB</text>
-      <text x="1001" y="151" class="mono" fill="#64748b" font-size="11">API</text>
-      <text x="998" y="222" class="mono" fill="#64748b" font-size="11">CLOUD</text>
+      <path d="M814 100L898 62L982 100V170C982 223 946 255 898 276C850 255 814 223 814 170Z" fill="var(--chip)" stroke="url(#accent)" stroke-width="2"/>
+      <path d="M898 84L958 111V167C958 205 935 230 898 249C861 230 838 205 838 167V111Z" fill="none" stroke="var(--border)" stroke-width="1.5"/>
+      <circle class="pulse" cx="898" cy="159" r="42" fill="none" stroke="var(--a1)" stroke-opacity="0.34"/>
+      <circle cx="898" cy="159" r="29" fill="var(--panel)" stroke="var(--a2)"/>
+      <text x="898" y="167" class="m" fill="var(--fg)" font-size="23" font-weight="700" text-anchor="middle">IA</text>
+      <path d="M982 117L1068 88M982 158H1110M974 205L1064 240" stroke="var(--border)"/>
+      <circle cx="1068" cy="88" r="5" fill="var(--a1)" filter="url(#softGlow)"/>
+      <circle cx="1110" cy="158" r="5" fill="var(--a2)" filter="url(#softGlow)"/>
+      <circle cx="1064" cy="240" r="5" fill="var(--a1)" filter="url(#softGlow)"/>
+      <text x="1001" y="109" class="m" fill="var(--muted)" font-size="11">WEB</text>
+      <text x="1001" y="151" class="m" fill="var(--muted)" font-size="11">API</text>
+      <text x="998" y="222" class="m" fill="var(--muted)" font-size="11">CLOUD</text>
     </g>
 
-    <text x="1138" y="274" class="mono" fill="#475569" font-size="11" text-anchor="end">SRI LANKA · UTC+05:30</text>
+    <text x="1138" y="274" class="m" fill="var(--faint)" font-size="11" text-anchor="end">SRI LANKA · UTC+05:30</text>
   </g>
-  <rect x="0.5" y="0.5" width="1199" height="319" rx="18" fill="none" stroke="#1e3a4f"/>
+  <rect x="0.5" y="0.5" width="1199" height="319" rx="18" fill="none" stroke="var(--border)"/>
 </svg>

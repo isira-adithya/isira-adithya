@@ -27,68 +27,115 @@ jobs:
           fetch-depth: 0
 
       - name: Prepare output directories
-        run: mkdir -p assets profile profile-3d-contrib
+        run: mkdir -p assets profile
 
-      - name: Generate GitHub stats card
+      - name: Generate GitHub stats card (dark)
         uses: stats-organization/github-readme-stats-action@v2.0.1
         with:
           card: stats
           options: >-
             username=${{ github.repository_owner }}&show_icons=true&include_all_commits=true&rank_icon=percentile&hide_border=true&theme=transparent&title_color=22d3ee&text_color=94a3b8&icon_color=2dd4bf
-          path: profile/stats.svg
+          path: profile/stats-dark.svg
           token: ${{ secrets.PROFILE_STATS_TOKEN || secrets.GITHUB_TOKEN }}
 
-      - name: Generate language card
+      - name: Generate GitHub stats card (light)
         uses: stats-organization/github-readme-stats-action@v2.0.1
         with:
-          card: top-langs
+          card: stats
           options: >-
-            username=${{ github.repository_owner }}&layout=compact&langs_count=8&hide_border=true&theme=transparent&title_color=22d3ee&text_color=94a3b8
-          path: profile/top-langs.svg
+            username=${{ github.repository_owner }}&show_icons=true&include_all_commits=true&rank_icon=percentile&hide_border=true&theme=transparent&title_color=0e7490&text_color=334155&icon_color=0f766e
+          path: profile/stats-light.svg
           token: ${{ secrets.PROFILE_STATS_TOKEN || secrets.GITHUB_TOKEN }}
 
-      - name: Generate XSSpecter repository card
+      # Pins ship per-theme. No single text colour clears WCAG AA on both a white and a
+      # #0d1117 canvas — the best any one value can reach is ~4.35:1 — so each card is
+      # generated twice and selected with <picture> in the README.
+      - name: Generate XSSpecter repository card (dark)
         uses: stats-organization/github-readme-stats-action@v2.0.1
         with:
           card: pin
           options: >-
             username=${{ github.repository_owner }}&repo=xsspecter&hide_border=true&theme=transparent&title_color=22d3ee&text_color=94a3b8&icon_color=2dd4bf
-          path: profile/pin-xsspecter.svg
+          path: profile/pin-xsspecter-dark.svg
           token: ${{ secrets.PROFILE_STATS_TOKEN || secrets.GITHUB_TOKEN }}
 
-      - name: Generate Burp Collaborator to Discord repository card
+      - name: Generate XSSpecter repository card (light)
+        uses: stats-organization/github-readme-stats-action@v2.0.1
+        with:
+          card: pin
+          options: >-
+            username=${{ github.repository_owner }}&repo=xsspecter&hide_border=true&theme=transparent&title_color=0e7490&text_color=334155&icon_color=0f766e
+          path: profile/pin-xsspecter-light.svg
+          token: ${{ secrets.PROFILE_STATS_TOKEN || secrets.GITHUB_TOKEN }}
+
+      - name: Generate Burp Collaborator to Discord repository card (dark)
         uses: stats-organization/github-readme-stats-action@v2.0.1
         with:
           card: pin
           options: >-
             username=${{ github.repository_owner }}&repo=bcollabtodiscord&hide_border=true&theme=transparent&title_color=22d3ee&text_color=94a3b8&icon_color=2dd4bf
-          path: profile/pin-bcollabtodiscord.svg
+          path: profile/pin-bcollabtodiscord-dark.svg
           token: ${{ secrets.PROFILE_STATS_TOKEN || secrets.GITHUB_TOKEN }}
 
-      - name: Generate filter-waf repository card
+      - name: Generate Burp Collaborator to Discord repository card (light)
+        uses: stats-organization/github-readme-stats-action@v2.0.1
+        with:
+          card: pin
+          options: >-
+            username=${{ github.repository_owner }}&repo=bcollabtodiscord&hide_border=true&theme=transparent&title_color=0e7490&text_color=334155&icon_color=0f766e
+          path: profile/pin-bcollabtodiscord-light.svg
+          token: ${{ secrets.PROFILE_STATS_TOKEN || secrets.GITHUB_TOKEN }}
+
+      - name: Generate filter-waf repository card (dark)
         uses: stats-organization/github-readme-stats-action@v2.0.1
         with:
           card: pin
           options: >-
             username=${{ github.repository_owner }}&repo=filter-waf&hide_border=true&theme=transparent&title_color=22d3ee&text_color=94a3b8&icon_color=2dd4bf
-          path: profile/pin-filter-waf.svg
+          path: profile/pin-filter-waf-dark.svg
           token: ${{ secrets.PROFILE_STATS_TOKEN || secrets.GITHUB_TOKEN }}
 
-      - name: Generate getallips repository card
+      - name: Generate filter-waf repository card (light)
+        uses: stats-organization/github-readme-stats-action@v2.0.1
+        with:
+          card: pin
+          options: >-
+            username=${{ github.repository_owner }}&repo=filter-waf&hide_border=true&theme=transparent&title_color=0e7490&text_color=334155&icon_color=0f766e
+          path: profile/pin-filter-waf-light.svg
+          token: ${{ secrets.PROFILE_STATS_TOKEN || secrets.GITHUB_TOKEN }}
+
+      - name: Generate getallips repository card (dark)
         uses: stats-organization/github-readme-stats-action@v2.0.1
         with:
           card: pin
           options: >-
             username=${{ github.repository_owner }}&repo=getallips&hide_border=true&theme=transparent&title_color=22d3ee&text_color=94a3b8&icon_color=2dd4bf
-          path: profile/pin-getallips.svg
+          path: profile/pin-getallips-dark.svg
           token: ${{ secrets.PROFILE_STATS_TOKEN || secrets.GITHUB_TOKEN }}
 
-      - name: Generate contribution streak card
+      - name: Generate getallips repository card (light)
+        uses: stats-organization/github-readme-stats-action@v2.0.1
+        with:
+          card: pin
+          options: >-
+            username=${{ github.repository_owner }}&repo=getallips&hide_border=true&theme=transparent&title_color=0e7490&text_color=334155&icon_color=0f766e
+          path: profile/pin-getallips-light.svg
+          token: ${{ secrets.PROFILE_STATS_TOKEN || secrets.GITHUB_TOKEN }}
+
+      - name: Generate contribution streak card (dark)
         uses: DenverCoder1/github-readme-streak-stats@v1.7.0
         with:
           options: >-
             user=${{ github.repository_owner }}&hide_border=true&background=00000000&ring=22d3ee&fire=2dd4bf&currStreakLabel=22d3ee&sideLabels=94a3b8&currStreakNum=e2e8f0&sideNums=e2e8f0&dates=64748b&stroke=00000000
-          path: profile/streak.svg
+          path: profile/streak-dark.svg
+          token: ${{ secrets.PROFILE_STATS_TOKEN || secrets.GITHUB_TOKEN }}
+
+      - name: Generate contribution streak card (light)
+        uses: DenverCoder1/github-readme-streak-stats@v1.7.0
+        with:
+          options: >-
+            user=${{ github.repository_owner }}&hide_border=true&background=00000000&ring=0e7490&fire=0f766e&currStreakLabel=0e7490&sideLabels=334155&currStreakNum=0f172a&sideNums=0f172a&dates=55657a&stroke=00000000
+          path: profile/streak-light.svg
           token: ${{ secrets.PROFILE_STATS_TOKEN || secrets.GITHUB_TOKEN }}
 
       - name: Generate light and dark contribution snakes
@@ -99,19 +146,13 @@ jobs:
             assets/github-snake.svg
             assets/github-snake-dark.svg?palette=github-dark
 
-      - name: Generate 3D contribution calendar
-        uses: yoshi389111/github-profile-3d-contrib@v0.9.3
-        env:
-          GITHUB_TOKEN: ${{ secrets.PROFILE_STATS_TOKEN || secrets.GITHUB_TOKEN }}
-          USERNAME: ${{ github.repository_owner }}
-
       - name: Commit refreshed assets
         shell: bash
         run: |
           set -euo pipefail
           git config user.name "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
-          git add assets/github-snake*.svg profile/*.svg profile-3d-contrib/*.svg
+          git add assets/github-snake*.svg profile/*.svg
 
           if git diff --cached --quiet; then
             echo "No generated asset changes."

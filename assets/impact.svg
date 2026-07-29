@@ -1,20 +1,76 @@
-<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="210" viewBox="0 0 1200 210" role="img" aria-labelledby="title desc">
-  <title id="title">Public security research metrics</title>
-  <desc id="desc">663 Intigriti submissions, 419 accepted reports, 98 percent validity, number 12 Intigriti rank, and 41 HackerOne thanks.</desc>
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="300" viewBox="0 0 1200 300" role="img" aria-labelledby="t d">
+  <title id="t">Public security research metrics</title>
+  <desc id="d">663 Intigriti submissions, 419 accepted reports, 98 percent validity rate, number 12 Intigriti all-time rank, and 41 HackerOne thanks.</desc>
   <defs>
-    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#060b13"/><stop offset="1" stop-color="#0b1624"/></linearGradient>
-    <linearGradient id="line" x1="0" y1="0" x2="1" y2="0"><stop stop-color="#22d3ee"/><stop offset="1" stop-color="#2dd4bf"/></linearGradient>
-    <style>.m{font-family:ui-monospace,SFMono-Regular,Menlo,Monaco,Consolas,"Liberation Mono",monospace}</style>
+    <style>
+      svg{
+        --bg-a:#f7fafd; --bg-b:#eef4fa;
+        --card:#ffffff; --border:#c6d5e2; --border-2:#d9e4ee;
+        --a1:#0e7490; --a2:#0f766e; --fg:#0f172a; --muted:#55657a;
+      }
+      @media (prefers-color-scheme: dark){
+        svg{
+          --bg-a:#060b13; --bg-b:#0b1624;
+          --card:#081522; --border:#1d3b52; --border-2:#17384d;
+          --a1:#22d3ee; --a2:#2dd4bf; --fg:#e2e8f0; --muted:#94a3b8;
+        }
+      }
+      .m{font-family:ui-monospace,SFMono-Regular,Menlo,Monaco,Consolas,"Liberation Mono",monospace}
+      .card{fill:var(--card);stroke:var(--border-2)}
+      .lab{fill:var(--muted);font-size:17px}
+      .num{fill:var(--fg);font-size:46px;font-weight:700}
+    </style>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop stop-color="var(--bg-a)"/><stop offset="1" stop-color="var(--bg-b)"/>
+    </linearGradient>
+    <linearGradient id="line" x1="0" y1="0" x2="1" y2="0">
+      <stop stop-color="var(--a1)"/><stop offset="1" stop-color="var(--a2)"/>
+    </linearGradient>
   </defs>
-  <rect width="1200" height="210" rx="16" fill="url(#bg)" stroke="#1d3b52"/>
-  <text x="32" y="34" class="m" font-size="12" fill="#64748b" letter-spacing="2">PUBLIC PLATFORM SNAPSHOT · 2026-07-28</text>
-  <rect x="32" y="49" width="1136" height="2" rx="1" fill="url(#line)" opacity="0.75"/>
 
-  <g transform="translate(32 72)">
-    <g><rect width="211" height="108" rx="12" fill="#081522" stroke="#17384d"/><text x="20" y="33" class="m" font-size="12" fill="#64748b">INTIGRITI SUBMISSIONS</text><text x="20" y="79" class="m" font-size="34" font-weight="700" fill="#e2e8f0">663</text><circle cx="181" cy="72" r="14" fill="#22d3ee" opacity=".12"/><path d="M174 72h14M181 65v14" stroke="#22d3ee" stroke-width="2"/></g>
-    <g transform="translate(231 0)"><rect width="211" height="108" rx="12" fill="#081522" stroke="#17384d"/><text x="20" y="33" class="m" font-size="12" fill="#64748b">ACCEPTED REPORTS</text><text x="20" y="79" class="m" font-size="34" font-weight="700" fill="#e2e8f0">419</text><circle cx="181" cy="72" r="14" fill="#2dd4bf" opacity=".12"/><path d="M174 72l5 5 10-12" fill="none" stroke="#2dd4bf" stroke-width="2"/></g>
-    <g transform="translate(462 0)"><rect width="211" height="108" rx="12" fill="#081522" stroke="#17384d"/><text x="20" y="33" class="m" font-size="12" fill="#64748b">VALIDITY RATE</text><text x="20" y="79" class="m" font-size="34" font-weight="700" fill="#e2e8f0">98%</text><circle cx="181" cy="72" r="14" fill="#22d3ee" opacity=".12"/><path d="M174 77l14-14M176 65h.1M186 77h.1" stroke="#22d3ee" stroke-width="2" stroke-linecap="round"/></g>
-    <g transform="translate(693 0)"><rect width="211" height="108" rx="12" fill="#081522" stroke="#17384d"/><text x="20" y="33" class="m" font-size="12" fill="#64748b">INTIGRITI RANK</text><text x="20" y="79" class="m" font-size="34" font-weight="700" fill="#e2e8f0">#12</text><circle cx="181" cy="72" r="14" fill="#2dd4bf" opacity=".12"/><path d="M174 79h14M176 74l5-10 4 7 3-5" fill="none" stroke="#2dd4bf" stroke-width="2"/></g>
-    <g transform="translate(924 0)"><rect width="212" height="108" rx="12" fill="#081522" stroke="#17384d"/><text x="20" y="33" class="m" font-size="12" fill="#64748b">HACKERONE THANKS</text><text x="20" y="79" class="m" font-size="34" font-weight="700" fill="#e2e8f0">41</text><circle cx="182" cy="72" r="14" fill="#22d3ee" opacity=".12"/><path d="M175 76c6-11 8-11 14 0M177 68h.1M187 68h.1" fill="none" stroke="#22d3ee" stroke-width="2" stroke-linecap="round"/></g>
+  <rect width="1200" height="300" rx="16" fill="url(#bg)" stroke="var(--border)"/>
+  <text x="32" y="38" class="m" font-size="13" fill="var(--muted)" letter-spacing="2">PUBLIC PLATFORM SNAPSHOT · 2026-07-28</text>
+  <rect x="32" y="54" width="1136" height="2" rx="1" fill="url(#line)" opacity="0.75"/>
+
+  <g transform="translate(32 76)">
+    <rect class="card" width="365" height="100" rx="12"/>
+    <text x="20" y="34" class="m lab">INTIGRITI SUBMISSIONS</text>
+    <text x="20" y="82" class="m num">663</text>
+    <circle cx="325" cy="70" r="18" fill="var(--a1)" opacity=".12"/>
+    <path d="M317 70h16M325 62v16" stroke="var(--a1)" stroke-width="2.2" stroke-linecap="round"/>
+  </g>
+
+  <g transform="translate(417 76)">
+    <rect class="card" width="365" height="100" rx="12"/>
+    <text x="20" y="34" class="m lab">ACCEPTED REPORTS</text>
+    <text x="20" y="82" class="m num">419</text>
+    <circle cx="325" cy="70" r="18" fill="var(--a2)" opacity=".12"/>
+    <path d="M317 70.5l5.5 5.5L334 64" fill="none" stroke="var(--a2)" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/>
+  </g>
+
+  <g transform="translate(802 76)">
+    <rect class="card" width="365" height="100" rx="12"/>
+    <text x="20" y="34" class="m lab">VALIDITY RATE</text>
+    <text x="20" y="82" class="m num">98%</text>
+    <circle cx="325" cy="70" r="18" fill="var(--a1)" opacity=".12"/>
+    <path d="M316 77a11 11 0 0 1 18-8" fill="none" stroke="var(--a1)" stroke-width="2.2" stroke-linecap="round"/>
+    <path d="M325 71l7-6" stroke="var(--a1)" stroke-width="2.2" stroke-linecap="round"/>
+  </g>
+
+  <g transform="translate(225 192)">
+    <rect class="card" width="365" height="100" rx="12"/>
+    <text x="20" y="34" class="m lab">INTIGRITI RANK</text>
+    <text x="20" y="82" class="m num">#12</text>
+    <circle cx="325" cy="70" r="18" fill="var(--a2)" opacity=".12"/>
+    <path d="M316 79h18M318 74l5-11 4.5 8 3.5-5.5" fill="none" stroke="var(--a2)" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/>
+  </g>
+
+  <g transform="translate(610 192)">
+    <rect class="card" width="365" height="100" rx="12"/>
+    <text x="20" y="34" class="m lab">HACKERONE THANKS</text>
+    <text x="20" y="82" class="m num">41</text>
+    <circle cx="325" cy="70" r="18" fill="var(--a1)" opacity=".12"/>
+    <path d="M317 72c5.5 9 10.5 9 16 0" fill="none" stroke="var(--a1)" stroke-width="2.2" stroke-linecap="round"/>
+    <path d="M319.5 64.5h.1M330.5 64.5h.1" stroke="var(--a1)" stroke-width="2.6" stroke-linecap="round"/>
   </g>
 </svg>

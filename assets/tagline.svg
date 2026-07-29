@@ -1,0 +1,55 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="72" viewBox="0 0 1200 72" role="img" aria-labelledby="title desc">
+  <title id="title">What I do</title>
+  <desc id="desc">Cyber Security Researcher. Ethical Hacker and Bug Bounty Hunter. Web, API and Cloud Security. Building offensive security tooling.</desc>
+  <defs>
+    <style>
+      svg{
+        --a1:#0e7490; --a2:#0f766e;
+        --fg-2:#334155; --muted:#55657a;
+      }
+      @media (prefers-color-scheme: dark){
+        svg{
+          --a1:#22d3ee; --a2:#2dd4bf;
+          --fg-2:#cbd5e1; --muted:#94a3b8;
+        }
+      }
+      .m { font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", monospace; }
+
+      .l0 rect { animation: l0 12s steps(25) infinite; }
+      .l1 rect { animation: l1 12s steps(34) infinite; }
+      .l2 rect { animation: l2 12s steps(26) infinite; }
+      .l3 rect { animation: l3 12s steps(35) infinite; }
+
+      @keyframes l0 { 0%{width:0} 9%{width:274px} 23%{width:274px} 23.01%{width:0} 100%{width:0} }
+      @keyframes l1 { 0%,25%{width:0} 34%{width:371px} 48%{width:371px} 48.01%{width:0} 100%{width:0} }
+      @keyframes l2 { 0%,50%{width:0} 59%{width:285px} 73%{width:285px} 73.01%{width:0} 100%{width:0} }
+      @keyframes l3 { 0%,75%{width:0} 84%{width:382px} 98%{width:382px} 98.01%{width:0} 100%{width:0} }
+
+      .cursor {
+        animation: track 12s steps(30) infinite, blink 1.05s steps(1,end) infinite;
+      }
+      @keyframes track {
+        0%   { x: 509px }  9%  { x: 779px } 23%   { x: 779px } 23.01% { x: 509px }
+        25%  { x: 509px } 34%  { x: 876px } 48%   { x: 876px } 48.01% { x: 509px }
+        50%  { x: 509px } 59%  { x: 790px } 73%   { x: 790px } 73.01% { x: 509px }
+        75%  { x: 509px } 84%  { x: 887px } 98%   { x: 887px } 98.01% { x: 509px }
+        100% { x: 509px }
+      }
+      @keyframes blink { 0%,48% { opacity: 1 } 49%,100% { opacity: 0 } }
+    </style>
+
+    <clipPath id="c0" class="l0"><rect x="507" y="20" width="0" height="34"/></clipPath>
+    <clipPath id="c1" class="l1"><rect x="507" y="20" width="0" height="34"/></clipPath>
+    <clipPath id="c2" class="l2"><rect x="507" y="20" width="0" height="34"/></clipPath>
+    <clipPath id="c3" class="l3"><rect x="507" y="20" width="0" height="34"/></clipPath>
+  </defs>
+
+  <text x="314" y="44" class="m" fill="var(--muted)" font-size="18" textLength="184">isira@research:~$</text>
+
+  <g clip-path="url(#c0)"><text x="509" y="44" class="m" fill="var(--fg-2)" font-size="18" textLength="270">Cyber Security Researcher</text></g>
+  <g clip-path="url(#c1)"><text x="509" y="44" class="m" fill="var(--fg-2)" font-size="18" textLength="367">Ethical Hacker &amp; Bug Bounty Hunter</text></g>
+  <g clip-path="url(#c2)"><text x="509" y="44" class="m" fill="var(--fg-2)" font-size="18" textLength="281">Web · API · Cloud Security</text></g>
+  <g clip-path="url(#c3)"><text x="509" y="44" class="m" fill="var(--fg-2)" font-size="18" textLength="378">Building offensive security tooling</text></g>
+
+  <rect class="cursor" x="509" y="29" width="9" height="22" fill="var(--a2)"/>
+</svg>

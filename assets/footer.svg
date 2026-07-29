@@ -1,6 +1,18 @@
-<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="85" viewBox="0 0 1200 85" role="img" aria-labelledby="title">
-<title id="title">Curiosity is the root of security</title>
-<defs><linearGradient id="g" x1="0" y1="0" x2="1" y2="0"><stop stop-color="#22d3ee" stop-opacity="0"/><stop offset=".5" stop-color="#22d3ee"/><stop offset="1" stop-color="#2dd4bf" stop-opacity="0"/></linearGradient><style>.m{font-family:ui-monospace,SFMono-Regular,Menlo,Monaco,Consolas,"Liberation Mono",monospace}</style></defs>
-<path d="M0 42C180 10 360 75 600 42S1020 10 1200 42" fill="none" stroke="url(#g)" stroke-width="2"/>
-<text x="600" y="69" class="m" fill="#64748b" font-size="12" letter-spacing="1.6" text-anchor="middle">CURIOSITY IS THE ROOT OF SECURITY</text>
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="90" viewBox="0 0 1200 90" role="img" aria-labelledby="t">
+  <title id="t">Curiosity is the root of security</title>
+  <defs>
+    <style>
+      svg{ --a1:#0e7490; --a2:#0f766e; --muted:#55657a; }
+      @media (prefers-color-scheme: dark){ svg{ --a1:#22d3ee; --a2:#2dd4bf; --muted:#94a3b8; } }
+      .m{font-family:ui-monospace,SFMono-Regular,Menlo,Monaco,Consolas,"Liberation Mono",monospace}
+    </style>
+    <linearGradient id="g" x1="0" y1="0" x2="1" y2="0">
+      <stop stop-color="var(--a1)" stop-opacity="0"/>
+      <stop offset=".5" stop-color="var(--a1)"/>
+      <stop offset="1" stop-color="var(--a2)" stop-opacity="0"/>
+    </linearGradient>
+  </defs>
+  <path d="M0 40C180 8 360 73 600 40S1020 8 1200 40" fill="none" stroke="url(#g)" stroke-width="2"/>
+  <circle cx="600" cy="40" r="3.5" fill="var(--a2)"/>
+  <text x="600" y="72" class="m" fill="var(--muted)" font-size="13" letter-spacing="2" text-anchor="middle">CURIOSITY IS THE ROOT OF SECURITY</text>
 </svg>

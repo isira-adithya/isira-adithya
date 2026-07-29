@@ -1,0 +1,13 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="136" height="28" viewBox="0 0 136 28" role="img" aria-labelledby="t">
+  <title id="t">Intigriti: rank number 12 all-time</title>
+  <defs><style>
+    svg{ --a1:#0e7490; --a2:#0f766e; --fg-2:#334155; }
+    @media (prefers-color-scheme: dark){ svg{ --a1:#22d3ee; --a2:#2dd4bf; --fg-2:#cbd5e1; } }
+    .m{font-family:ui-monospace,SFMono-Regular,Menlo,Monaco,Consolas,"Liberation Mono",monospace}
+  </style></defs>
+  <g fill="none" stroke="var(--a2)" stroke-width="1.5" stroke-linejoin="round">
+    <path d="M15 6.5l7.5 4.2v6.1c0 3.9-3.1 6.3-7.5 7.7-4.4-1.4-7.5-3.8-7.5-7.7v-6.1z"/>
+    <path d="M11.6 14.2l2.6 2.6 4.4-5" stroke="var(--a1)"/>
+  </g>
+  <text x="30" y="18.5" class="m" font-size="12" textLength="94" letter-spacing="0.2"><tspan fill="var(--fg-2)">INTIGRITI </tspan><tspan fill="var(--a1)" font-weight="700">#12</tspan></text>
+</svg>

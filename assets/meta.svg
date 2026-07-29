@@ -1,0 +1,18 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="54" viewBox="0 0 1200 54" role="img" aria-labelledby="t">
+  <title id="t">Based in Sri Lanka. Focus on web, API and cloud. Independent security researcher.</title>
+  <defs><style>
+    svg{ --chip:#f2f7fb; --border-2:#d9e4ee; --a1:#0e7490; --fg-2:#334155; --muted:#55657a; }
+    @media (prefers-color-scheme: dark){ svg{ --chip:#0b1c2c; --border-2:#17384d; --a1:#22d3ee; --fg-2:#cbd5e1; --muted:#94a3b8; } }
+    .m{font-family:ui-monospace,SFMono-Regular,Menlo,Monaco,Consolas,"Liberation Mono",monospace}
+    .c{fill:var(--chip);stroke:var(--border-2)}
+  </style></defs>
+
+  <rect class="c" x="257" y="10" width="157" height="34" rx="8"/>
+  <text x="273" y="32" class="m" font-size="13" textLength="125"><tspan fill="var(--muted)">BASE · </tspan><tspan fill="var(--fg-2)">SRI LANKA</tspan></text>
+
+  <rect class="c" x="428" y="10" width="227" height="34" rx="8"/>
+  <text x="444" y="32" class="m" font-size="13" textLength="195"><tspan fill="var(--muted)">FOCUS · </tspan><tspan fill="var(--a1)">WEB / API / CLOUD</tspan></text>
+
+  <rect class="c" x="669" y="10" width="274" height="34" rx="8"/>
+  <text x="685" y="32" class="m" font-size="13" textLength="242"><tspan fill="var(--muted)">STATUS · </tspan><tspan fill="var(--fg-2)">INDEPENDENT RESEARCHER</tspan></text>
+</svg>
