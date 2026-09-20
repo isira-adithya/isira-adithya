@@ -123,7 +123,7 @@ jobs:
           token: ${{ secrets.PROFILE_STATS_TOKEN || secrets.GITHUB_TOKEN }}
 
       - name: Generate contribution streak card (dark)
-        uses: DenverCoder1/github-readme-streak-stats@v1.7.0
+        uses: DenverCoder1/github-readme-streak-stats@v1.8.0
         with:
           options: >-
             user=${{ github.repository_owner }}&hide_border=true&background=00000000&ring=22d3ee&fire=2dd4bf&currStreakLabel=22d3ee&sideLabels=94a3b8&currStreakNum=e2e8f0&sideNums=e2e8f0&dates=64748b&stroke=00000000
@@ -131,7 +131,7 @@ jobs:
           token: ${{ secrets.PROFILE_STATS_TOKEN || secrets.GITHUB_TOKEN }}
 
       - name: Generate contribution streak card (light)
-        uses: DenverCoder1/github-readme-streak-stats@v1.7.0
+        uses: DenverCoder1/github-readme-streak-stats@v1.8.0
         with:
           options: >-
             user=${{ github.repository_owner }}&hide_border=true&background=00000000&ring=0e7490&fire=0f766e&currStreakLabel=0e7490&sideLabels=334155&currStreakNum=0f172a&sideNums=0f172a&dates=55657a&stroke=00000000
