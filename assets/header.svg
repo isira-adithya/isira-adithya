@@ -1,0 +1,7 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="600" height="80" viewBox="0 0 600 80" role="img" aria-labelledby="t">
+  <title id="t">Isira Adithya</title>
+  <!-- Static, single-colour on purpose: both values clear 3:1 on #ffffff and #0d1117,
+       so the header reads in either GitHub theme without prefers-color-scheme. -->
+  <text x="2" y="44" fill="#6e7781" font-family="ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, 'Liberation Mono', monospace" font-size="36" font-weight="500">isira adithya</text>
+  <rect x="3" y="60" width="44" height="3" rx="1.5" fill="#0e8fa3"/>
+</svg>
